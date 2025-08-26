@@ -105,31 +105,26 @@
     <p>&copy; 2025 My Sample Website. All Rights Reserved.</p>
   </footer>
   <script type='text/javascript'>
-    function initEmbeddedMessaging() {
-      try {
-        embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-        window.addEventListener("onEmbeddedMessagingReady", () => {
-          console.log("Received the onEmbeddedMessagingReady event...");
-          embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({ "customerEmail": "test" });
-        });
+			embeddedservice_bootstrap.init(
+				'00Dd200000LrcxV',
+				'Live_Human_Agent',
+				'https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWLiveHumanAgent1756200637073',
+				{
+					scrt2URL: 'https://dd200000lrcxvear-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWLiveHumanAgent1756200637073/assets/js/bootstrap.min.js' 
+onload='initEmbeddedMessaging()'></script>
 
-        embeddedservice_bootstrap.init(
-          '00Dd200000LrcxV',
-          'Github_Messaging_Setting',
-          'https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1755542308143',
-          {
-            scrt2URL: 'https://dd200000lrcxvear-dev-ed.develop.my.salesforce-scrt.com'
-          }
-        );
-      } catch (err) {
-        console.error('Error loading Embedded Messaging: ', err);
-      }
-    };
-  </script>
-  <script type='text/javascript'
-    src='https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1755542308143/assets/js/bootstrap.min.js'
-    onload='initEmbeddedMessaging()'></script>
 </body>
 
 </html>
