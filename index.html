@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample Website Page</title>
+  <title>PureConnect Extended Support</title>
   <style>
     body {
       margin: 0;
@@ -14,7 +14,8 @@
     }
 
     header {
-      background: #4CAF50;
+      background: #006400;
+      /* Dark Green */
       color: white;
       padding: 15px 20px;
       text-align: center;
@@ -68,62 +69,61 @@
 
 <body>
   <header>
-    <h1>Welcome to My Sample Website Live_Agent</h1>
-    <p>A simple responsive HTML & CSS webpage</p>
+    <h1>PureConnect Extended Support</h1>
   </header>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
+    <a href="#">Customer Care</a>
+    <a href="#">Resources</a>
     <a href="#">Contact</a>
   </nav>
 
   <div class="container">
     <div class="card">
       <h2>About Us</h2>
-      <p>This is a sample section where you can describe your website, company, or personal profile. You can customize
-        it as per your needs.</p>
+      <p>Infosys Extended Support Offer for Genesys PureConnect Software</p>
     </div>
 
     <div class="card">
       <h2>Our Services</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>AI & Chatbot Solutions</li>
-        <li>Cloud Consulting</li>
-      </ul>
+      <p>Infosys PureConnect Extended Support is being offered and supported solely by Infosys as an option to Genesys
+        PureConnect customers and partners to provide continued product support beyond Genesys PureConnect EOL.</p>
     </div>
 
     <div class="card">
       <h2>Contact</h2>
-      <p>Email: example@email.com</p>
-      <p>Phone: +91 98765 43210</p>
+      <p>Email: <a href="mailto:PCC_ExtendedSupport@infosys.com">PCC_ExtendedSupport@infosys.com</a></p>
+      <p>Phone: +1 214 785 2397</p>
     </div>
   </div>
-  <footer>
-    <p>&copy; 2025 My Sample Website. All Rights Reserved.</p>
-  </footer>
-  <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-			embeddedservice_bootstrap.init(
-				'00Dd200000LrcxV',
-				'Live_Human_Agent',
-				'https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWLiveHumanAgent1756200637073',
-				{
-					scrt2URL: 'https://dd200000lrcxvear-dev-ed.develop.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWLiveHumanAgent1756200637073/assets/js/bootstrap.min.js' 
-onload='initEmbeddedMessaging()'></script>
+  <footer>
+    <p>&copy; 2025 PCC Extended Support. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Salesforce Embedded Messaging -->
+  <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+      try {
+        embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+        embeddedservice_bootstrap.init(
+          '00Dd200000LrcxV',
+          'Live_Human_Agent',
+          'https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWLiveHumanAgent1756200637073',
+          {
+            scrt2URL: 'https://dd200000lrcxvear-dev-ed.develop.my.salesforce-scrt.com'
+          }
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    };
+  </script>
+  <script type='text/javascript'
+    src='https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWLiveHumanAgent1756200637073/assets/js/bootstrap.min.js'
+    onload='initEmbeddedMessaging()'></script>
 
 </body>
 
